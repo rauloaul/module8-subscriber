@@ -15,6 +15,7 @@ impl MessageHandler<UserCreatedEventMessage> for UserCreatedHandler {
         let ten_millis = time::Duration::from_millis(1000);
         let now = time::Instant::now();
 
+        // I accidentaly had this uncommented on the first commit
         thread::sleep(ten_millis);
 
         println!("In Rafif's Computer [2206823291]. Message received: {:?}", message);
